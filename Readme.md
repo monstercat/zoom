@@ -11,6 +11,14 @@
 
     $ component install monstercat/zoom
 
+## Example
+
+```html
+<div class="zoom-container">
+  <div class="effect-zoom"></div>
+</div>
+```
+
 ## License
 
   MIT
