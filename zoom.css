@@ -1,0 +1,28 @@
+.zoom-container {
+  width: 128px;
+  height: 128px;
+  position: relative;
+  float: left;
+  margin: 10px;
+}
+.effect-zoom {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  float: none;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.effect-zoom:hover {
+  top: -32px;
+  left: -32px;
+  z-index: 300;
+  background-size: 192px 192px;
+  width: 192px;
+  height: 192px;
+}

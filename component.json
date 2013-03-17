@@ -1,0 +1,13 @@
+{
+  "name": "zoom",
+  "repo": "monstercat/zoom",
+  "description": "Pure css hover zoom",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "zoom.css"
+  ]
+}

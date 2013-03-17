@@ -1,0 +1,41 @@
+
+@size: 128px;
+@speed: .1s;
+@scale: 1.5;
+
+.transition(@args) {
+  -webkit-transition: @args;
+  -moz-transition: @args;
+  -o-transition: @args;
+  transition: @args;
+}
+
+.zoom-container {
+  width: @size;
+  height: @size;
+  position: relative;
+  float: left;
+  margin: 10px;
+}
+
+.effect-zoom {
+  width: @size;
+  height: @size;
+  position: absolute;
+  float: none;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  .transition(all @speed ease-out);
+}
+
+.effect-zoom:hover {
+  @size2: @size * @scale;
+  @half: @size / 2 - @size2 / 2;
+  top: @half;
+  left: @half;
+  z-index: 300;
+  background-size: @size2 @size2;
+  width: @size2;
+  height: @size2;
+}
